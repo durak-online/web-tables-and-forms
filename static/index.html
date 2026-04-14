@@ -9,8 +9,69 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="post">
-        <button type="reset">Сбросить форму</button>
+   <form action="/pets/orders" method="POST">
+        
+        <div>
+            <label for="name">Введите ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" value="Сергей Безрукова">
+        </div>
+
+        <div>
+            <label for="email">Введите ваш email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" value="fiit@gmail.com">
+        </div>
+
+        <div>
+            <label for="phone">Введите номер телефона:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+79999999999" value="+78005553535">
+        </div>
+
+        <div>
+            <label for="petType">Выберите тип питомца:</label>
+            <select id="petType" name="petType">
+                <option value="dog">Собака</option>
+                <option value="cat" selected>Кошка</option>
+                <option value="tiger">Тигр</option>
+                <option value="camera">Камера</option>
+                <option value="owl">Сова</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Выберите пол питомца:</p>
+            <input type="radio" id="gender_male" name="gender" value="boy">
+            <label for="gender_male">Мальчик</label>
+
+            <input type="radio" id="gender_female" name="gender" value="girl" checked>
+            <label for="gender_female">Девочка</label>
+        </div>
+
+        <div>
+            <label for="dateOfBirth">Введите дату рождения будущего питомца:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" value="2001-01-11">
+        </div>
+
+        <div>
+            <label for="eyeColor">Выберите цвет глаз:</label>
+            <input type="color" id="eyeColor" name="eyeColor" value="#00ff00"> </div>
+
+        <div>
+            <label for="tailLength">Выберите длину хвоста в см (кто это вообще выбирает):</label>
+            <input type="range" id="tailLength" name="tailLength" min="0" max="100" value="30">
+        </div>
+
+        <div>
+            <input type="checkbox" id="rules" name="rules" value="true" unchecked>
+            <label for="rules">Я соглашаюсь с правилами</label>
+        </div>
+
+        <hr>
+
+        <div>
+            <button type="submit">Отправить заявку</button>
+            <button type="reset">Сбросить форму</button>
+        </div>
+
     </form>
 
 </main>
